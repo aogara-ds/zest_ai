@@ -1,5 +1,5 @@
-# Zest Repository
-Preliminary repository for credit and underwriting work conducted for Zest AI.
+# Zest Projects
+A personal repository created by Aidan O'Gara to store work for Zest AI. 
 
-# Work Trial
+## Work Trial
 The work_trial folder contains the code for my work trial assignment of building a credit underwriting policy. 
