@@ -1,62 +1,11 @@
-# Improving Performance on 
+# Building a Credit Underwriting Policy
+Work Trial for Zest AI 
+Aidan O'Gara, Senior Data Scientist Candidate
 
+This work trial constructs a credit policy for a hypothetical Zest client based on customer application and loan performance data. The credit policy includes but does not wholly consist of a novel credit score built with XGBoost and trained on a sample client data. 
 
-## Credit Scoring Algorithm
+All of the best documentation is included in the individual notebooks. I would particularly recommend step_00 for the construction of a dynamic data dictionary, step_01 for extracting new features from the dataset, step_04 for an explanation of the XGBoost hyperparameter tuning, and step_06 for a fair lending analysis plan. 
 
-* Model types
-* * Logistic regression
-* * Decision tree
-* * XGBoost
-* * Other GBM / decision tree methods?
-* * SVM
-* * MLP
+A few slides I presented to the team on how this data analyis fits into the broader puzzle of building an underwriting policy can be found [here](https://docs.google.com/presentation/d/1SR3axw8LLGhZUoMuZORY9zgajtAAqdMoYNoddBxtBGc/edit?usp=sharing). 
 
-* Build models that can be easily generalized from binary to multiple classification (not LR)
-* Train the model on pre-screened segments of the population. Baseline credit: No prior charge-offs. See if the model can be more accurate. 
-
-
-
-## Credit Underwriting Policy Proposal
-
-* Build a Zest Score using credit info from the loan application. Classification models predict the probability that the borrower will fall into default. Provide this number to the pricing model in the form of a default rate, multiplier, or credit score between 350 and 850. 
-* Devise a number of individual credit underwriting rules. Pick those which seem valuable, test several hyperparameters, and write a new policy. Use the Zest Score as one of, but not the only, input. 
-
-Tradeoff between credit scoring and credit underwriting:
-* Reliability of data
-* Effects of missing data
-* Out-of-sample performance
-* Overfitting
-
-Build a credit score first. But separately build an evaluation of credit underwriting rules. Banks have business needs, they don't always want to overhaul their policies in exchange for our credit score. Stride's investors love to hear that we don't use traditional credit scores. Instead of credit scores, try segmenting the market according to individual underlying characteristics. 
-
-
-## Dynamic Pricing Proposal
-Each student is given a default rate within the pricing model. We should use the credit underwriting dataset to provide default risk assessments for each candidate. 
-
-Zest Score
-
-
-## Fair Lending Tests
-
-* Extract race and ZIP code from 
-
-
-
-
-
-## Technical Environment
-* Using environments (or requirements.txt) in Jupyter notebooks
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+The results of this repository are fully reproducible. Begin by importing the Excel file you sent me into the /input_data/ folder, then run each notebook in full in the provided order. Please reach out if you run into any trouble, and hope to hear from you soon!
