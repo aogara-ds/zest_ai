@@ -1,6 +1,7 @@
 # Building a Credit Underwriting Policy
 Work Trial for Zest AI 
-Aidan O'Gara, Senior Data Scientist Candidate
+
+Prepared by Aidan O'Gara, Senior Data Scientist Candidate
 
 This work trial constructs a credit policy for a hypothetical Zest client based on customer application and loan performance data. The credit policy includes but does not wholly consist of a novel credit score built with XGBoost and trained on a sample client data. 
 
